@@ -7,7 +7,7 @@ import (
 )
 
 func TestTsMap(t *testing.T) {
-	m := tsmap.NewTsMap[string, string]()
+	m := tsmap.NewThreadSafeMap[string, string]()
 
 	m.Set("one", "data1")
 	m.Set("two", "data2")
